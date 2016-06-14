@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>First Page:::JS</title>
+	<script language="javascript">
+function r(x){
+	document.write("<h1 style='text-align:center;color:red;'>"+x+"</h1>");
+}
+r("Numarical Arrays");
+//var variable = new Array(value1,value2,valule3,.....);
+var a=new Array("sample",25,25000,'Dev','Hyd');
+//array[index];
+for(i=0;i<5;i++){
+	document.write(i+'----------'+a[i]+"<br>");
+}
+r("Associative Arrays");
+/*
+var array=new Array();
+array[index1]=value1;
+array[index2]=value2;
+array[index3]=value3;
+- - - - -
+for(variable in array){
+	d.w(array[variable]);
+}
+*/
+var b=new Array();
+b['name']='lamp';
+b['age']=25;
+b['salary']=25000;
+b['dept']='Dev';
+b['location']='Hyd';
+document.write("<table border='1' align='center' width='300px'>")
+var sno=1;
+for(m in b){
+	(sno%2==0)?s='pink':s='cyan';
+	document.write("<tr bgcolor="+s+">");
+	document.write("<td>"+sno+"</td>");
+	document.write("<td>"+m+"</td>");
+	document.write("<td>"+b[m]+"</td>");
+	document.write("</tr>");
+	sno++;
+}
+document.write("</table>");
+</script>
+</head>
+<body>
+</body>
+</html>
