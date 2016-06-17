@@ -1,0 +1,31 @@
+
+    <div id="container">
+    	
+    </div>
+
+<script>
+
+var d=document.createElement("div");
+//var text=document.createTextNode("this is Dynam is HTML");
+//d.appendChild(text);
+d.setAttribute("id","mydiv");
+var con=document.getElementById("container");
+con.appendChild(d);
+
+var para=document.createElement("p");
+var text=document.createTextNode("this is Dynam is HTML");
+para.appendChild(text);
+
+var div=document.getElementById("mydiv")
+div.appendChild(para);
+
+
+var a=document.createElement("a");
+var atext=document.createTextNode("Click Here");
+a.appendChild(atext);
+a.setAttribute("href","http://google.com");
+a.setAttribute("target","_blank");
+div.appendChild(a);
+
+
+</script>

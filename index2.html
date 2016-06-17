@@ -3,13 +3,64 @@
 <body>
 <div id="container"></div>
 <script>
-
+/*
 var d=document.createElement("div");
 
 var e=document.getElementById("container");
 var txt=document.createElement("p");
+var text=document.createNodeText("welcome");
+txt.appendChild(text);
 e.appendChild(txt);
-e.appendChild(d);
+e.appendChild(d);*/
+
+
+/*function displaywindow(){
+var m=window.open("","","width:300,height:300");
+m.document.write("this is my new window");
+//window.close();
+}
+*/
+/*setInterval(function(){
+alert("hi")
+},5000);
+*/
+/*
+(function (name){
+alert(name);}
+)("suresh");
+
+(function (name){
+alert(name);}
+)("suresh yadav");*/
+
+
+(function (name){
+alert(name);
+}
+)("suresh");
+
+
+/*
+(function (book){
+if(book==null || book==undefined){
+book={};
+}
+var books=[{
+    author:"suresh",
+	name:"jquery"
+
+}];
+ book.getAllbooks=function(){
+ // logic goes here
+ 
+ return books;
+ };
+ book.getPrice=function(){
+ //logic goes here
+ };
+}(window.product={});*/
+
 </script>
+<!--<button value="btn" onclick="displaywindow()">click me</button>-->
 </body>
 </html>
